@@ -1,0 +1,10 @@
+[gd_resource type="DynamicFont" load_steps=2 format=2]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://Vegur-Regular.otf"
+
+[resource]
+size = 30
+outline_size = 3
+use_filter = true
+font_data = SubResource( 1 )

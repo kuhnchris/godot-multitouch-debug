@@ -43,6 +43,8 @@ func _draw():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	
-	self.modulate.a = self.modulate.a - 1.0 / speed
+	if self.modulate.a > 0:
+		self.modulate.a = self.modulate.a - 1.0 / speed
+	else:
+		self.visible = false
 	

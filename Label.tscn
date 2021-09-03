@@ -6,8 +6,8 @@
 [node name="Label" type="Label"]
 margin_right = 56.0
 margin_bottom = 14.0
-custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "Example Text"
 script = ExtResource( 1 )
 __meta__ = {

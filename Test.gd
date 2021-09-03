@@ -14,7 +14,7 @@ func addMsg(text):
 	print_debug(tTxt," ",text)
 
 func handleInput(event, from):
-	var evIdx = event.get_class()
+	var evIdx = from + "." + event.get_class()
 	if "index" in event:
 		evIdx = evIdx + str(event.index)
 
@@ -43,6 +43,8 @@ func handleInput(event, from):
 func _gui_input(event):
 	handleInput(event, "_gui_input")
 
+func _input(event):
+	handleInput(event, "_input")
 
 func _unhandled_input(event):
 	handleInput(event, "_unhandled_input")
